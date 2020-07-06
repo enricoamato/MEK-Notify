@@ -1,0 +1,126 @@
+.services {
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+        @include breakpoint($xl) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
+    &__image {
+        max-height: 12rem;
+        width: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    &__box {
+        background-color: rgba(#868F98, .25);
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        display: block;
+        margin: 0 auto;
+        font-weight: bold;
+
+        @include breakpoint($xl) {
+            font-size: 2.1rem;
+        }
+    }
+
+    &__monitors,
+    &__community,
+    &__shipping {
+        @include breakpoint($md) {
+            max-width: 83.333333%;
+            margin-left: 8.333333%;
+        }
+
+        @include breakpoint($xl) {
+            max-width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    &__monitors {
+        grid-row: 1 / 2;
+
+        @include breakpoint($xl) {
+            grid-row: 1 / 3;
+        }
+
+        &__counter {
+            font-size: 6.9rem;
+            font-weight: bold;
+            display: block;
+            margin: 0 auto;
+
+            @include breakpoint($xl) {
+                font-size: 8.5rem;
+            }
+
+            &::after {
+                content: '\002B';
+                width: 3.4rem;
+                height: 7.5rem;
+                color: #62E47A;
+            }
+        }
+    }
+
+    &__community {
+        &__counter {
+            font-size: 6.9rem;
+            font-weight: bold;
+            display: block;
+            margin: 0 auto;
+
+            @include breakpoint($xl) {
+                font-size: 8.5rem;
+            }
+
+            &::after {
+                content: '\002B';
+                width: 3.4rem;
+                height: 7.5rem;
+                color: #00D2F2;
+            }
+        }
+
+    }
+
+    &__shipping {
+        &__text {
+            margin-top: 8rem;
+
+            @include breakpoint($xl) {
+                margin-top: 7rem;
+            }
+        }
+
+        &__image {
+            max-height: initial;
+            max-width: 36rem;
+            margin: 0 auto;
+        }
+
+        //&__image {
+        //    width: 100%;
+        //    margin-bottom: 3.5rem;
+        //    max-width: 50rem;
+        //}
+    }
+
+    &__slider--mobile {
+        margin-top: 3rem;
+    }
+
+    &__slider--desktop {
+        margin-top: 12rem;
+    }
+}

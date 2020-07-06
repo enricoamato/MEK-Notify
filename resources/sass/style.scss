@@ -1,0 +1,30 @@
+// Init
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/slick-carousel/slick/slick";
+@import "node_modules/slick-carousel/slick/slick-theme";
+@import "node_modules/aos/src/sass/aos";
+
+// Base
+@import 'base/base';
+
+// Layout
+@import 'layout/layout';
+
+// Components
+@import 'components/sections';
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/homepage';
+@import 'components/features';
+@import 'components/about-us';
+@import 'components/feedback';
+@import 'components/services';
+@import 'components/discord';
+@import 'components/slider';
+@import 'components/success';
+@import 'components/counter';
+@import 'components/scrollspy';
+
+

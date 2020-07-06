@@ -1,0 +1,45 @@
+.slider {
+    width: 100%;
+    margin: 10rem auto 0;
+
+    &__image {
+        max-width: 9rem;
+
+        @include breakpoint($xl) {
+            max-width: 12rem;
+        }
+
+        &__container {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            //margin: 0 3rem;
+
+            @include breakpoint($xl) {
+                //margin: 0 9rem;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+
+        @include breakpoint($xl) {
+            font-size: 2.1rem;
+        }
+    }
+
+    &__services {
+
+    }
+
+    &__container {
+        max-width: 63rem;
+    }
+}
+
+.slick-track {
+    display: flex !important;
+    align-items: center;
+}

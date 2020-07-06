@@ -1,0 +1,46 @@
+/*
+    Media Query Manager
+
+    0-767          = Phone
+    768-1365       = Tablet
+    1366-1999      = Desktop
+    2000-unlimited = Big Screen
+ */
+
+@mixin breakpoint($breakpoint) {
+    @if $breakpoint == $sm {
+        @media only screen and (min-width: $sm) { @content };
+    }
+    @if $breakpoint == $md {
+        @media only screen and (min-width: $md) { @content };
+    }
+    @if $breakpoint == $lg {
+        @media only screen and (min-width: $lg) { @content };
+    }
+    @if $breakpoint == $xl {
+        @media only screen and (min-width: $xl) { @content };
+    }
+    @if $breakpoint == $xxl {
+        @media only screen and (min-width: $xxl) { @content };
+    }
+    @if $breakpoint == $big-screen {
+        @media only screen and (min-width: $big-screen) { @content };
+    }
+}
+
+
+
+// Fast way to vertically/horizontally center elements
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin listReset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

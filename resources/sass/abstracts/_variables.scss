@@ -1,0 +1,50 @@
+$sm: 36em;
+$md: 48em;
+$lg: 62em;
+$xl: 85em;
+$xxl: 100em;
+$big-screen: 150em;
+
+
+// Bootstrap overrides
+$grid-breakpoints: (
+    xs: 0,
+    sm: $sm,
+    md: $md,
+    lg: $lg,
+    xl: $xl,
+    xxl: $xxl,
+    big-screen: $big-screen
+);
+
+$grid-gutter-width: 20px;
+
+.mb-medium {
+    margin-bottom: 2rem;
+}
+
+.mb-big {
+    margin-bottom: 4rem;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slash {
+    display: inline-block;
+    margin-right: .5rem;
+    margin-left: 0.5rem;
+
+    &:hover {
+        color: white;
+    }
+}

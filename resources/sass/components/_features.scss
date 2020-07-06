@@ -1,0 +1,102 @@
+.feature {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(#868F98, .25);
+    width: 100%;
+    border-radius: 1rem;
+    padding: 3.1rem 4rem;
+    overflow: hidden;
+
+    &__container {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__bg-elements {
+        @include absCenter;
+    }
+
+    &:hover {
+        .feature__background {
+            transform: scale(8);
+
+            @include breakpoint($sm) {
+                transform: scale(10);
+            }
+        }
+
+        .feature__icon__box {
+            background: transparent;
+        }
+    }
+
+    &__background {
+        position: relative;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 2rem;
+        z-index: -1;
+        transition: transform .3s;
+
+        &--1 {
+            background: linear-gradient(180deg, #6B7DF2, #1571DB);
+        }
+
+        &--2 {
+            background: linear-gradient(180deg, #b055fa, #6f1cd1)
+        }
+
+        &--3 {
+            background: linear-gradient(180deg, #424242, #1d1d1d);
+        }
+
+        &--4 {
+            background: linear-gradient(180deg, #dc7cef, #bc2dd8);
+        }
+
+        &--5 {
+            background: linear-gradient(180deg, #F3658F, #E61871);
+        }
+
+        &--6 {
+            background: linear-gradient(180deg, #A5EDA5, #4AED6A);
+        }
+    }
+
+    &__icon {
+        @include absCenter;
+
+        &__container {
+            width: 7rem;
+            height: 7rem;
+            margin: 0 auto 3.2rem
+        }
+
+        &__box {
+            position: relative;
+            width: 7rem;
+            height: 7rem;
+            border-radius: 2rem;
+            transition: background .2s;
+        }
+    }
+
+    &__text {
+        flex: 0 0 100%;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__heading {
+        font-size: 2.1rem;
+        margin-bottom: 2.2rem;
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+    }
+}

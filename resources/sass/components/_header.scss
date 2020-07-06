@@ -1,0 +1,197 @@
+.header {
+    position: fixed;
+    top: 1.5rem;
+    width: 100%;
+    background-color: transparent;
+    z-index: 120;
+    transition: opacity .4s, width .2s, height .2s, transform .5s ease-in-out;
+
+    &.hide {
+        transform: translateY(-150%);
+    }
+
+    &.navigation-open {
+        background-color: transparent;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include breakpoint($xl) {
+            max-width: 164rem;
+            margin: 2.5rem auto;
+        }
+    }
+
+    &__language--mobile {
+        background-color: rgba(#CA6161, .43);
+        width: 3.4rem;
+        height: 3.4rem;
+        border-radius: 50%;
+        position: relative;
+
+        @include breakpoint($xl) {
+            display: none;
+        }
+
+        &--selected {
+            @include absCenter;
+            display: inline-block;
+            font-size: 1.5rem;
+            color: $white;
+            transition: color .1s;
+
+            @include breakpoint($xl) {
+                font-size: 2rem;
+                position: static;
+            }
+
+            &:hover {
+                color: #FFBABA;
+                text-shadow: 0 0 2.5rem #FF0087;
+
+                .underline {
+                    width: 100%;
+                    background-color: #FFBABA;
+                    height: 0.2rem;
+                    bottom: -0.25rem;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    &__language--desktop {
+        display: none;
+        color: $white;
+        font-size: 2rem;
+        order: 3;
+
+        @include breakpoint($xl) {
+            display: flex;
+        }
+    }
+
+    .underline {
+        position: absolute;
+        width: 0;
+        transition: width .2s;
+    }
+
+    &__language--1,
+    &__language--2 {
+        position: relative;
+        color: $white;
+        transition: color .1s;
+
+        &:hover {
+            color: #FFBABA !important;
+            text-shadow: 0 0 2.5rem #FF0087;
+            cursor: pointer;
+
+            .underline {
+                width: 100%;
+                background-color: #FFBABA;
+                height: 0.2rem;
+                bottom: -0.25rem;
+                left: 0;
+            }
+        }
+    }
+
+    &__logo {
+        align-items: center;
+        width: 3.4rem;
+
+        @include breakpoint($xl) {
+            width: 8.3rem;
+        }
+
+        img {
+            max-width: 3.4rem;
+            height: auto;
+        }
+
+        @include breakpoint($xl) {
+            order: 1;
+        }
+    }
+
+    &__menu {
+        background-color: #0C2F54;
+        width: 3.4rem;
+        height: 3.4rem;
+        border-radius: 50%;
+        position: relative;
+        z-index: 12;
+
+        &.navigation-open {
+            background-color: rgba(#889897, .35);
+        }
+
+        @include breakpoint($xl) {
+            //order: 2;
+            display: none;
+        }
+    }
+
+    &__dots {
+        @include absCenter;
+        transition: transform .2s;
+
+        &.active {
+            transform: translate(-50%, -50%) rotate(-90deg);
+        }
+    }
+
+    &__list {
+        display: none;
+        transition: opacity .2s, visibility .2s;
+
+        @include listReset;
+
+        @include breakpoint($xl) {
+            display: flex;
+            order: 2;
+            margin-right: -0.5rem;
+        }
+
+        &.hide {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    &__item {
+        position: relative;
+        font-size: 2rem;
+        margin: 0 4.25rem;
+        cursor: pointer;
+        transition: color .2s;
+
+        &:hover {
+            color: #FFBABA;
+            text-shadow: 0 0 2.5rem #FF0087;
+
+            .underline {
+                width: 100%;
+                background-color: #FFBABA;
+                height: 0.2rem;
+                bottom: -0.25rem;
+                left: 0;
+            }
+        }
+
+        .underline {
+            position: absolute;
+            width: 0;
+            transition: width .2s;
+        }
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}

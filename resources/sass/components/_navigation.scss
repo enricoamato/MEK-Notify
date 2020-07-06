@@ -1,0 +1,61 @@
+.navigation {
+    opacity: 0;
+    //transform: translate(0, -100%);
+    transition: width .2s, height .2s;
+
+    &.visible {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+        opacity: 1;
+
+        @include breakpoint($xl) {
+            opacity: 0;
+        }
+    }
+
+    &__background {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        //background-color: rgba(#4a4b4d, .2);
+        background-color: (#0B0D0F, .5);
+        z-index: 11;
+        -webkit-backdrop-filter: blur(30px) brightness(60%);
+        backdrop-filter: blur(30px) brightness(60%);
+    }
+
+    &__nav {
+        @include absCenter;
+        z-index: 110;
+    }
+
+    &__list {
+        font-size: 1.25rem;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        color: #fff;
+    }
+
+    &__item {
+        color: inherit;
+        margin: 5.75rem 0;
+        background-color: rgba(#889897, .35);
+        padding: 1rem 10.2rem;
+        white-space: nowrap;
+        border-radius: .5rem;
+    }
+
+    &__link {
+        color: inherit;
+        font-size: 2rem;
+
+        &:hover {
+            text-decoration: none;
+            color: #cecece;
+        }
+    }
+}

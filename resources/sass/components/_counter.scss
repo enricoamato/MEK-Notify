@@ -1,0 +1,40 @@
+.counter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    height: 6.9rem;
+    font-size: 6.9rem;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 3rem;
+
+    @include breakpoint($xl) {
+        height: 8.5rem;
+        font-size: 8.5rem;
+    }
+
+    & > span {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transition: transform 2s ease;
+        transform: translateY(0);
+        line-height: 1;
+
+        span {
+            flex: 0 0 100%;
+            height: 100%;
+        }
+    }
+    $d: 0;
+    $inc: 0.375;
+    @for $i from 1 through 20 {
+        &:nth-child(#{$i}) > span {
+            transition-delay: #{$d * 1s};
+        }
+        $d: $d + $inc;
+    }
+}

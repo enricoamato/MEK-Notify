@@ -1,0 +1,126 @@
+#section-menu {
+    display: none;
+
+    @include breakpoint($xl) {
+        display: block;
+        position: fixed;
+        top: 80%;
+        right: 0;
+        z-index: 2;
+        text-transform: capitalize;
+        transition: all ease 0.1s;
+    }
+
+    &.freeze {
+        right: -11.2rem;
+
+        a {
+            float: none;
+            width: 12.8rem;
+
+            &.active {
+                span {
+                    display: inline-block;
+                    //background: #000;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            span {
+                display: inline-block;
+            }
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        float: right;
+        clear: both;
+        display: block;
+        font-size: 1.5rem;
+        line-height: 2;
+        text-decoration: none;
+        padding: 0 1.5rem;
+        //background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        white-space: nowrap;
+        opacity: .5;
+        margin: 1rem 0;
+
+        -webkit-transition: all ease 0.1s;
+        transition: all ease 0.1s;
+
+        &:hover,
+        &:focus {
+            //font-size: 2rem;
+
+            color: #FFBABA;
+            opacity: .75;
+            text-shadow: 0 0 2.5rem #FF0087;
+
+            .underline {
+                width: 100%;
+                background-color: #FFBABA;
+                height: 0.2rem;
+                bottom: -0.25rem;
+                left: 0;
+            }
+        }
+
+        &.active {
+            font-size: 2rem;
+            font-weight: 700;
+            opacity: 1;
+
+            color: #FFBABA;
+            text-shadow: 0 0 2.5rem #FF0087;
+
+            .underline {
+                width: 100%;
+                background-color: #FFBABA;
+                height: 0.2rem;
+                bottom: -0.25rem;
+                left: 0;
+            }
+        }
+
+        span {
+            display: none;
+            font-weight: 700;
+            position: relative;
+            width: 4.8rem;
+            left: -1.6rem;
+            text-align: center;
+            //background: rgba(0, 0, 0, 0.1);
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                //background: rgba(255, 255, 255, 0.25);
+            }
+        }
+    }
+
+    .underline {
+        position: absolute;
+        width: 0;
+        transition: width .2s;
+    }
+}
+
+.touch #section-menu {
+    display: none;
+}
+
+

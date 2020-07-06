@@ -1,0 +1,29 @@
+// Custom utilities
+.mb-medium {
+    margin-bottom: 2rem;
+}
+
+// Vegas slider overrides
+.vegas-slide {
+    top: -1px;
+    bottom: -5px;
+}
+
+.vegas-timer {
+    display: none;
+}
+
+// Slick slider overrides
+.slick-slide {
+    outline: none;
+}
+
+.slick-dots li button:before {
+    color: $white;
+    opacity: .25;
+}
+
+.slick-dots li.slick-active button:before {
+    color: $white;
+    opacity: 1;
+}

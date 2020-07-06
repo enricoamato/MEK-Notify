@@ -1,0 +1,72 @@
+.feedback {
+    &__container {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__item {
+        background-color: rgba(#868F98, .25);
+        padding: 4.5rem 2.5rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 1rem;
+        min-height: 34rem;
+
+        @include breakpoint($xl) {
+            padding: 4.5rem 3.5rem 7.5rem;
+            min-height: 41rem;
+        }
+    }
+
+    &__user-image {
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 2.5rem;
+        width: 9.5rem;
+        height: 9.5rem;
+
+        @include breakpoint($xl) {
+            margin-bottom: 2.75rem;
+        }
+    }
+
+    &__user-name {
+        font-size: 1.9rem;
+        margin-bottom: 3rem;
+        flex: 0 0 100%;
+        text-align: center;
+
+        @include breakpoint($xl) {
+            font-size: 2.5rem;
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    &__description {
+        position: relative;
+        font-size: 1.1rem;
+        font-style: italic;
+
+        &::before,
+        &::after {
+            content: '"';
+            display: inline-block;
+            font-family: 'Lily Script One', cursive;
+        }
+
+        &::before {
+            font-size: 4rem;
+            position: absolute;
+            top: -2.5rem;
+            left: -1.5rem;
+        }
+
+        @include breakpoint($xl) {
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,180 @@
+.about-us {
+    &__container {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+
+        @include breakpoint($md) {
+            width: 83.333333%;
+        }
+
+        @include breakpoint($xl) {
+            width: 100%;
+        }
+    }
+
+    &__glass-ball {
+        position: absolute;
+        display: none;
+
+        @include breakpoint($xl) {
+            display: block;
+        }
+
+        &--1 {
+            top: -125%;
+            left: 33%;
+            transform: translateX(-50%);
+            max-width: 10.8rem;
+            animation: float 2.5s ease infinite;
+        }
+
+        &--2 {
+            left: 6rem;
+            max-width: 13.9rem;
+            bottom: -200%;
+            animation: float 3s ease .3s infinite;
+        }
+
+        &--3 {
+            max-width: 9.3rem;
+            top: 19rem;
+            transform: rotate(330deg);
+            right: 5rem;
+            animation: float 2.5s ease 1.2s infinite;
+        }
+    }
+
+    &__background {
+        display: flex;
+        background-color: rgba(#868F98, .25);
+        padding: 9rem 2rem 1rem;
+        border-radius: 1rem;
+
+        @include breakpoint($xl) {
+            padding: 8.5rem 3.5rem;
+            min-height: 57rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 0;
+        position: relative;
+        color: #ddd;
+
+        @include breakpoint($sm) {
+            margin-bottom: 3rem;
+        }
+
+        @include breakpoint($md) {
+            font-size: 2rem;
+        }
+
+        @include breakpoint($xl) {
+            font-size: 2.6rem;
+            margin-bottom: 0;
+            max-width: 90%;
+            line-height: 1.2;
+        }
+
+        span {
+            font-size: 3rem;
+            font-weight: 600;
+            color: $white;
+
+            @include breakpoint($xl) {
+                font-size: 3.5rem;
+            }
+        }
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+    }
+
+    &__min-height {
+        min-height: 46rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include breakpoint($md) {
+            min-height: 43rem;
+        }
+
+        @include breakpoint($lg) {
+            min-height: 46rem;
+        }
+
+        @include breakpoint($xl) {
+            min-height: 32rem;
+        }
+    }
+
+    &__discord {
+        display: none;
+        flex-wrap: wrap;
+        background-color: #2F3136;
+        background-size: cover;
+        justify-content: center;
+        border-radius: 3rem;
+        padding: 5rem;
+        box-shadow: 0 .3rem .6rem rgba($black, .16);
+
+        &.active {
+            display: flex;
+        }
+
+        &--logged-in {
+            display: none;
+            box-shadow: 0 .3rem .6rem rgba($black, .16);
+
+            @include breakpoint($xl) {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                transform: translate(2.5rem, 12.5rem);
+            }
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        @include breakpoint($xl) {
+            padding: 9.5rem;
+        }
+
+        &__logo {
+            flex: 0 0 100%;
+            margin-bottom: 1.5rem;
+            max-width: 6rem;
+
+            @include breakpoint($xl) {
+                max-width: 100%;
+            }
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            flex: 0 0 100%;
+            text-align: center;
+            margin-top: 5rem;
+
+            @include breakpoint($xl) {
+                font-size: 2.6rem;
+                margin-bottom: 0;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
