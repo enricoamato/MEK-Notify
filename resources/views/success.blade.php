@@ -16,7 +16,7 @@
     </div>
     <div class="container-fluid">
         <div class="row success">
-            <div class="col-12 col-md-8 offset-md-2 mb-medium" data-aos="fade-up" data-aos-offset="400">
+            <div class="col-12 col-md-8 offset-md-2 mb-medium" data-aos="fade-up" data-aos-offset="200">s
                 <a class="success__banner" href="https://twitter.com/MEKNotify" target="_blank">
                     <img src="{{asset('media/images/banner.png')}}"
                          alt="banner"
@@ -24,7 +24,7 @@
                     >
                 </a>
             </div>
-            <div class="col-12 col-md-8 offset-md-2" data-aos="fade-up" data-aos-offset="400">
+            <div class="col-12 col-md-8 offset-md-2" data-aos="fade-up" data-aos-offset="200">
                 <img src="{{asset('media/images/glass-balls/feedback/glass-ball--1.png')}}"
                      class="img-fluid success__glass-ball success__glass-ball--1"
                      alt="glass ball 1">

@@ -20,9 +20,9 @@
         @include('scrollspy')
         @include('header')
         @include('navigation')
-        @include('homepage')
-        @include('features')
-        @include('about-us')
+{{--        @include('homepage')--}}
+{{--        @include('features')--}}
+{{--        @include('about-us')--}}
         @include('services')
         @include('feedback')
         @include('success')
