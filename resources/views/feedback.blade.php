@@ -1,6 +1,6 @@
 <section id="section-three" class="section-feedback scroll-item" title="@lang('scrollspy.feedback')">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" data-aos="zoom-in-down" data-aos-offset="300">
             <div class="col-12 text-center mb-big">
                 <object data="{{asset('media/images/background-elements-section-title.svg')}}"
                         class="img-fluid section__background-elements"
