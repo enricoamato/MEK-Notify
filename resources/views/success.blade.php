@@ -16,7 +16,7 @@
     </div>
     <div class="container-fluid">
         <div class="row success">
-            <div class="col-12 col-md-8 offset-md-2 mb-medium" data-aos="fade-up" data-aos-offset="200">s
+            <div class="col-12 col-md-8 offset-md-2 mb-medium" data-aos="fade-up" data-aos-offset="200">
                 <a class="success__banner" href="https://twitter.com/MEKNotify" target="_blank">
                     <img src="{{asset('media/images/banner.png')}}"
                          alt="banner"
