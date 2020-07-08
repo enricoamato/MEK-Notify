@@ -14954,9 +14954,7 @@ body.cn .section__subtitle {
   transition: box-shadow 0.15s, background 0.15s;
 }
 
-.intro__button:hover,
-.intro__button:active,
-.intro__button:focus {
+.intro__button:hover {
   box-shadow: 0 0 3rem #5EB76A;
   background: #5AD66B;
   border: none !important;
