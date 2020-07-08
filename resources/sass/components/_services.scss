@@ -20,6 +20,7 @@
         background-color: rgba(#868F98, .25);
         border-radius: 1rem;
         padding: 2rem;
+        text-align: center; // Fixes improper alignment in Firefox
     }
 
     &__text {

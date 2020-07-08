@@ -46,15 +46,6 @@
   color: white;
 }
 
-/*
-    Media Query Manager
-
-    0-767          = Phone
-    768-1365       = Tablet
-    1366-1999      = Desktop
-    2000-unlimited = Big Screen
- */
-
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -15267,8 +15258,21 @@ body.cn .section__subtitle {
   }
 }
 
+@media only screen and (min-width: 150em) {
+  .about-us__discord--logged-in {
+    width: 96%;
+  }
+}
+
 .about-us__discord--logged-in.active {
   display: flex;
+}
+
+@media only screen and (min-width: 150em) {
+  .about-us__discord--logged-in img {
+    width: 100%;
+    max-width: initial;
+  }
 }
 
 @media only screen and (min-width: 85em) {
@@ -15406,6 +15410,7 @@ body.cn .section__subtitle {
   background-color: rgba(134, 143, 152, 0.25);
   border-radius: 1rem;
   padding: 2rem;
+  text-align: center;
 }
 
 .services__text {

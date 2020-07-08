@@ -145,8 +145,19 @@
                 transform: translate(2.5rem, 12.5rem);
             }
 
+            @include breakpoint($big-screen) {
+                width: 96%;
+            }
+
             &.active {
                 display: flex;
+            }
+
+            img {
+                @include breakpoint($big-screen) {
+                    width: 100%;
+                    max-width: initial;
+                }
             }
         }
 
