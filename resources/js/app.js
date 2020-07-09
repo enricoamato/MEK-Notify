@@ -278,9 +278,9 @@ $(document).ready(function () {
 
     scrollMenu.css('margin-top', scrollMenu.height() / 2 * -1);
 
-    /* ==========================================================================
-         Smooth Scroll for Anchor Links and URL refresh
-         ========================================================================== */
+    /**
+     * Smooth Scroll for Anchor Links and URL refresh
+     */
 
     scrollMenu.find('a').click(function () {
         var href = $.attr(this, 'href');
@@ -292,13 +292,13 @@ $(document).ready(function () {
         return false;
     });
 
-    /* ==========================================================================
-         Fire functions on Scroll Event
-         ========================================================================== */
+
+    /**
+     * Fire functions on Scroll Event
+     */
 
     function scrollHandler() {
         menuListen();
-        // menuFreeze();
     }
 
     viewport

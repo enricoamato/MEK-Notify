@@ -121,7 +121,13 @@
     }
 
     &__discord {
-        display: none;
+
+        //display: none;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+
+
         flex-wrap: wrap;
         background-color: #2F3136;
         background-size: cover;
@@ -130,13 +136,23 @@
         padding: 5rem;
         box-shadow: 0 .3rem .6rem rgba($black, .16);
 
+        transition: opacity .5s;
+
         &.active {
-            display: flex;
+            //display: flex;
+            opacity: 1;
+            visibility: visible;
         }
 
         &--logged-in {
-            display: none;
+            display: flex;
+
             box-shadow: 0 .3rem .6rem rgba($black, .16);
+
+            opacity: 0;
+            visibility: hidden;
+
+            transition: opacity .5s;
 
             @include breakpoint($xl) {
                 position: absolute;
@@ -150,7 +166,10 @@
             }
 
             &.active {
-                display: flex;
+                //display: flex;
+
+                opacity: 1;
+                visibility: visible;
             }
 
             img {
