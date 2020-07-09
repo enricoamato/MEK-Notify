@@ -5,6 +5,7 @@ import jQuery from "jquery";
 
 window.$ = window.jQuery = jQuery;
 
+import LazyLoad from "vanilla-lazyload";
 import 'slick-carousel';
 import AOS from 'aos';
 
@@ -16,6 +17,17 @@ function removeLoader() {
 
 $(window).on('load', removeLoader);
 
+/**
+ * Lazyload init
+ */
+
+new LazyLoad({
+    elements_selector: ".lazy"
+});
+
+/**
+ * Document ready init function
+ */
 
 $(document).ready(function () {
 
