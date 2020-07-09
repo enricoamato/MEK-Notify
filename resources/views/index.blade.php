@@ -28,7 +28,5 @@
         @include('success')
 
     <script src="{{asset('js/app.js')}}"></script>
-    <script src="{{asset('js/vegas.js')}}"></script>
-    <script src="{{asset('js/counter.js')}}"></script>
     </body>
 </html>
