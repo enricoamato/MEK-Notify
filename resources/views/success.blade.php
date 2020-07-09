@@ -18,18 +18,18 @@
         <div class="row success">
             <div class="col-12 col-md-8 offset-md-2 mb-medium" data-aos="fade-up" data-aos-offset="200">
                 <a class="success__banner" href="https://twitter.com/MEKNotify" target="_blank">
-                    <img src="{{asset('media/images/banner.png')}}"
+                    <img data-src="{{asset('media/images/banner.png')}}"
                          alt="banner"
-                         class="img-fluid success__image"
+                         class="img-fluid success__image lazy"
                     >
                 </a>
             </div>
             <div class="col-12 col-md-8 offset-md-2" data-aos="fade-up" data-aos-offset="200">
-                <img src="{{asset('media/images/glass-balls/feedback/glass-ball--1.png')}}"
-                     class="img-fluid success__glass-ball success__glass-ball--1"
+                <img data-src="{{asset('media/images/glass-balls/feedback/glass-ball--1.png')}}"
+                     class="img-fluid success__glass-ball success__glass-ball--1 lazy"
                      alt="glass ball 1">
-                <img src="{{asset('media/images/glass-balls/feedback/glass-ball--2.png')}}"
-                     class="img-fluid success__glass-ball success__glass-ball--2"
+                <img data-src="{{asset('media/images/glass-balls/feedback/glass-ball--2.png')}}"
+                     class="img-fluid success__glass-ball success__glass-ball--2 lazy"
                      alt="glass ball 2">
 
                 <div class="success__tweets">

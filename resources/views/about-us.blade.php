@@ -22,17 +22,15 @@
         <div class="container-fluid about-us__background">
             <div class="row align-items-xl-center">
                 <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-0">
-
-                    <img src="{{asset('media/images/glass-balls/about-us/glass-ball--1.png')}}"
-                         class="img-fluid about-us__glass-ball about-us__glass-ball--1"
+                    <img data-src="{{asset('media/images/glass-balls/about-us/glass-ball--1.png')}}"
+                         class="img-fluid about-us__glass-ball about-us__glass-ball--1 lazy"
                          alt="glass ball 1">
-                    <img src="{{asset('media/images/glass-balls/about-us/glass-ball--2.png')}}"
-                         class="img-fluid about-us__glass-ball about-us__glass-ball--2"
+                    <img data-src="{{asset('media/images/glass-balls/about-us/glass-ball--2.png')}}"
+                         class="img-fluid about-us__glass-ball about-us__glass-ball--2 lazy"
                          alt="glass ball 2">
-                    <img src="{{asset('media/images/glass-balls/about-us/glass-ball--3.png')}}"
-                         class="img-fluid about-us__glass-ball about-us__glass-ball--3"
+                    <img data-src="{{asset('media/images/glass-balls/about-us/glass-ball--3.png')}}"
+                         class="img-fluid about-us__glass-ball about-us__glass-ball--3 lazy"
                          alt="glass ball 3">
-
                     <div class="about-us__text__container">
                         <h4 class="about-us__text">
                             <span class="d-inline-block">@lang('about-us.description-span')</span>
@@ -52,7 +50,7 @@
                         <span class="about-us__discord__text">@lang('about-us.sign-in')</span>
                     </div>
                     <div class="about-us__discord--logged-in">
-                        <img src="{{asset('media/images/discord-page.png')}}" class="img-fluid"
+                        <img data-src="{{asset('media/images/discord-page.png')}}" class="img-fluid lazy"
                              alt="discord logged in visual">
                     </div>
                 </div>

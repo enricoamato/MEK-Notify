@@ -23,9 +23,9 @@
                     <div class="feature__icon__container" data-aos="zoom-in-up">
                         <div class="feature__icon__box">
                             <div class="feature__background feature__background--1"></div>
-                            <img src="{{asset('media/images/features/computer-icon.svg')}}"
+                            <img data-src="{{asset('media/images/features/computer-icon.svg')}}"
                                  alt="computer icon"
-                                 class="img-fluid feature__icon"
+                                 class="img-fluid feature__icon lazy"
                             >
                         </div>
                     </div>
@@ -40,9 +40,9 @@
                     <div class="feature__icon__container" data-aos="zoom-in-up">
                         <div class="feature__icon__box">
                             <div class="feature__background feature__background--2"></div>
-                            <img src="{{asset('media/images/features/home-icon.svg')}}"
+                            <img data-src="{{asset('media/images/features/home-icon.svg')}}"
                                  alt="computer icon"
-                                 class="img-fluid feature__icon"
+                                 class="img-fluid feature__icon lazy"
                             >
                         </div>
                     </div>
@@ -57,9 +57,9 @@
                     <div class="feature__icon__container">
                         <div class="feature__icon__box" data-aos="zoom-in-up">
                             <div class="feature__background feature__background--3"></div>
-                            <img src="{{asset('media/images/features/bookmark-icon.svg')}}"
+                            <img data-src="{{asset('media/images/features/bookmark-icon.svg')}}"
                                  alt="computer icon"
-                                 class="img-fluid feature__icon"
+                                 class="img-fluid feature__icon lazy"
                             >
                         </div>
                     </div>
@@ -74,9 +74,9 @@
                     <div class="feature__icon__container" data-aos="zoom-in-up">
                         <div class="feature__icon__box">
                             <div class="feature__background feature__background--4"></div>
-                            <img src="{{asset('media/images/features/handshake-icon.svg')}}"
+                            <img data-src="{{asset('media/images/features/handshake-icon.svg')}}"
                                  alt="computer icon"
-                                 class="img-fluid feature__icon"
+                                 class="img-fluid feature__icon lazy"
                             >
                         </div>
                     </div>
@@ -91,9 +91,9 @@
                     <div class="feature__icon__container" data-aos="zoom-in-up">
                         <div class="feature__icon__box">
                             <div class="feature__background feature__background--5"></div>
-                            <img src="{{asset('media/images/features/support-icon.svg')}}"
+                            <img data-src="{{asset('media/images/features/support-icon.svg')}}"
                                  alt="computer icon"
-                                 class="img-fluid feature__icon"
+                                 class="img-fluid feature__icon lazy"
                             >
                         </div>
                     </div>
@@ -108,9 +108,9 @@
                     <div class="feature__icon__container" data-aos="zoom-in-up">
                         <div class="feature__icon__box">
                             <div class="feature__background feature__background--6"></div>
-                            <img src="{{asset('media/images/features/dots-icon.svg')}}"
+                            <img data-src="{{asset('media/images/features/dots-icon.svg')}}"
                                  alt="computer icon"
-                                 class="img-fluid feature__icon"
+                                 class="img-fluid feature__icon lazy"
                             >
                         </div>
                     </div>

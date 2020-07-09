@@ -1,4 +1,5 @@
 html {
+    scroll-behavior: smooth; // Testing
     font-size: 62.5%;
 
     @include breakpoint($big-screen) {

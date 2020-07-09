@@ -39,11 +39,7 @@
             <object data="{{asset('media/images/community.svg')}}"
                     class="col-12 services__image services__community__image justify-content-center"
             ></object>
-
-
             <span class="col-12 counter services__community__counter text-center" aria-label="1000">1000</span>
-
-
             <span class="col-12 services__text services__community__text text-center">@lang('services.community')</span>
         </div>
 
