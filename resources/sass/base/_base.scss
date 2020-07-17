@@ -1,12 +1,6 @@
 html {
     font-size: 62.5%;
 
-    // iPhone bounce fix
-    overflow: hidden;
-    width: 100%
-    height: 100%;
-    position: fixed;
-
     @include breakpoint($big-screen) {
         font-size: 85%;
     }
@@ -19,10 +13,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
-
-    //iPhone bounce fix
-    overflow: auto;
-    position: relative;
 
     &.cn {
         font-family: 'Noto Sans SC', sans-serif;
