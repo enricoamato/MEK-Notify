@@ -18,7 +18,7 @@
 
     <div class="feature__container">
         <div class="row">
-            <div class="col-12 col-md-6 col-xl-4 d-flex mb-medium" data-aos="zoom-in-up">
+            <div class="col-12 col-md-6 col-xl-4 d-flex mb-medium br-medium" data-aos="zoom-in-up">
                 <div class="feature">
                     <div class="feature__icon__container" data-aos="zoom-in-up">
                         <div class="feature__icon__box">
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-4 d-flex mb-medium" data-aos="zoom-in-up">
+            <div class="col-12 col-md-6 col-xl-4 d-flex mb-medium br-medium" data-aos="zoom-in-up">
                 <div class="feature">
                     <div class="feature__icon__container" data-aos="zoom-in-up">
                         <div class="feature__icon__box">
@@ -52,7 +52,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-4 d-flex mb-medium" data-aos="zoom-in-up">
+            <div class="col-12 col-md-6 col-xl-4 d-flex mb-medium br-medium" data-aos="zoom-in-up">
                 <div class="feature">
                     <div class="feature__icon__container">
                         <div class="feature__icon__box" data-aos="zoom-in-up">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-4 d-flex mb-medium" data-aos="zoom-in-up">
+            <div class="col-12 col-md-6 col-xl-4 d-flex mb-medium br-medium" data-aos="zoom-in-up">
                 <div class="feature">
                     <div class="feature__icon__container" data-aos="zoom-in-up">
                         <div class="feature__icon__box">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-4 d-flex mb-medium" data-aos="zoom-in-up">
+            <div class="col-12 col-md-6 col-xl-4 d-flex mb-medium br-medium" data-aos="zoom-in-up">
                 <div class="feature">
                     <div class="feature__icon__container" data-aos="zoom-in-up">
                         <div class="feature__icon__box">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-4 d-flex mb-medium" data-aos="zoom-in-up">
+            <div class="col-12 col-md-6 col-xl-4 d-flex mb-medium br-medium" data-aos="zoom-in-up">
                 <div class="feature">
                     <div class="feature__icon__container" data-aos="zoom-in-up">
                         <div class="feature__icon__box">

@@ -27,6 +27,12 @@ $grid-gutter-width: 20px;
     margin-bottom: 4rem;
 }
 
+
+// border radius
+.br-medium {
+    border-radius: 1rem;
+}
+
 @keyframes float {
     0% {
         transform: translateY(0);
