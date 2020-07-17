@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-0 about-us__min-height">
-                    <div class="about-us__discord active">
+                    <div class="about-us__discord acti\ve">
                         <div class="loader">
                             <div class="logo">
                                 <div class="logo__layer"></div>

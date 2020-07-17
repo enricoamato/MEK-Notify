@@ -112,8 +112,11 @@
 
         &__image {
             max-height: initial;
-            max-width: 36rem;
             margin: 0 auto;
+
+            @include breakpoint($sm) {
+                max-width: 36rem;
+            }
         }
 
         //&__image {

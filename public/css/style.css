@@ -15439,8 +15439,13 @@ body.cn .section__subtitle {
 
 .services__shipping__image {
   max-height: initial;
-  max-width: 36rem;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 36em) {
+  .services__shipping__image {
+    max-width: 36rem;
+  }
 }
 
 .services__slider--mobile {
