@@ -14290,6 +14290,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos],
 
 html {
   font-size: 62.5%;
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
 }
 
 @media only screen and (min-width: 150em) {
@@ -14305,6 +14308,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
+  overflow: auto;
+  height: 100%;
+  position: relative;
 }
 
 body.cn {

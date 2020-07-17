@@ -1141,7 +1141,6 @@ $(document).ready(function () {
     const $backgroundCrosshairs = $('.section__background-elements');
     let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-
     if (isIOS) {
         $backgroundCrosshairs.hide();
     }
