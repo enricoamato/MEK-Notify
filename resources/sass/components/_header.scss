@@ -7,11 +7,9 @@
     transition: opacity .4s, width .2s, height .2s, transform .5s ease-in-out;
 
     &.hide {
-        transform: translateY(-150%);
-    }
-
-    &.ios {
-        transform: none !important;
+        @include breakpoint($lg) {
+            transform: translateY(-150%);
+        }
     }
 
     &.navigation-open {
