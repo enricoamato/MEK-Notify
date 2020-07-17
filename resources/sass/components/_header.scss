@@ -11,7 +11,7 @@
     }
 
     &.ios {
-        transform: none;
+        transform: none !important;
     }
 
     &.navigation-open {

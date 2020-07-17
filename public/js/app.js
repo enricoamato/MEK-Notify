@@ -34265,14 +34265,9 @@ $(document).ready(function () {
 
   if (isIOS) {
     $backgroundCrosshairs.hide();
-    $header.addClass('ios');
   }
 
   $backgroundCrosshairs.show();
-
-  if ($header.hasClass('ios')) {
-    $header.removeClass('ios');
-  }
 });
 
 /***/ }),
