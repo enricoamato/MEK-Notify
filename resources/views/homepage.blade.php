@@ -4,8 +4,8 @@
 
             <div class="text-center text-xl-left offset-xl-1 col-xl-2 d-xl-flex align-items-xl-center"
                  data-aos="zoom-in"
-                 data-aos-delay="1000"
-                 data-aos-duration="1000"
+                 data-aos-delay="800"
+                 data-aos-duration="800"
                  data-aos-easing="ease-in-out">
                 <h2 class="intro__text intro__text--1">@lang('homepage.intro-1')</h2>
             </div>
@@ -15,7 +15,7 @@
                         width="100%" class="intro__background-elements d-none d-xl-block">
                 </object>
                 <div class="row offset-xl-3 intro__phone-row">
-                    <div class="col-xl-6 px-xl-0 d-flex flex-wrap intro__phone-col">
+                    <div class="col-xl-6 px-xl-0 d-xl-flex flex-xl-wrap intro__phone-col">
                         <img src="{{asset('media/images/iphone.png')}}"
                              class="img-fluid w-100"
                              alt="phone"
@@ -37,11 +37,12 @@
                 </div>
             </div>
 
-            <div class="text-center text-xl-right offset-xl-1 col-xl-2 d-xl-flex justify-content-xl-end align-items-center"
-                 data-aos="zoom-in"
-                 data-aos-delay="1000"
-                 data-aos-duration="1000"
-                 data-aos-easing="ease-in-out">
+            <div
+                class="text-center text-xl-right offset-xl-1 col-xl-2 d-xl-flex justify-content-xl-end align-items-center"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out">
                 <h2 class="intro__text intro__text--2">@lang('homepage.intro-2')</h2>
             </div>
         </div>

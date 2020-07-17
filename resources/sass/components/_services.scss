@@ -4,6 +4,12 @@
         grid-template-columns: 1fr;
         grid-gap: 2rem;
 
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: auto;
+        margin-left: auto;
+
         @include breakpoint($xl) {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
@@ -37,10 +43,10 @@
     &__monitors,
     &__community,
     &__shipping {
-        @include breakpoint($md) {
-            max-width: 83.333333%;
-            margin-left: 8.333333%;
-        }
+        //@include breakpoint($md) {
+        //    max-width: 8.333333%;
+        //    margin-left: 8.333333%;
+        //}
 
         @include breakpoint($xl) {
             max-width: 100%;

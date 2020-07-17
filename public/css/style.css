@@ -14438,7 +14438,7 @@ button:focus {
 .section-feedback,
 .section-services,
 .section-success {
-  padding-top: 9rem;
+  padding: 9rem 0;
   margin: 0 auto;
   max-width: 100rem;
 }
@@ -14450,14 +14450,22 @@ button:focus {
   .section-services,
   .section-success {
     max-width: 134rem;
+    padding: 7.5rem 12rem;
+  }
+}
+
+@media only screen and (min-width: 100em) {
+  .section-features,
+  .section-about-us,
+  .section-feedback,
+  .section-services,
+  .section-success {
     padding: 7.5rem 0;
   }
 }
 
 .section-services {
   width: 100%;
-  padding-right: 30px;
-  padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -15231,8 +15239,8 @@ body.cn .section__subtitle {
 
 .about-us__discord {
   display: flex;
-  opacity: 0;
-  visibility: hidden;
+  position: absolute;
+  width: 96%;
   flex-wrap: wrap;
   background-color: #2F3136;
   background-size: cover;
@@ -15240,6 +15248,8 @@ body.cn .section__subtitle {
   border-radius: 3rem;
   padding: 5rem;
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  visibility: hidden;
   transition: opacity 0.5s;
 }
 
@@ -15399,6 +15409,11 @@ body.cn .section__subtitle {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media only screen and (min-width: 85em) {
@@ -15431,15 +15446,6 @@ body.cn .section__subtitle {
 @media only screen and (min-width: 85em) {
   .services__text {
     font-size: 2.1rem;
-  }
-}
-
-@media only screen and (min-width: 48em) {
-  .services__monitors,
-  .services__community,
-  .services__shipping {
-    max-width: 83.333333%;
-    margin-left: 8.333333%;
   }
 }
 
