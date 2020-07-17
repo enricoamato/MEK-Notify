@@ -14454,10 +14454,12 @@ body.cn .section__subtitle {
   transition: opacity 0.4s, width 0.2s, height 0.2s, transform 0.5s ease-in-out;
 }
 
-@media only screen and (min-width: 62em) {
-  .header.hide {
-    transform: translateY(-150%);
-  }
+.header.hide {
+  transform: translateY(-150%);
+}
+
+.header.ios {
+  transform: none !important;
 }
 
 .header.navigation-open {

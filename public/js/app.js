@@ -34260,14 +34260,17 @@ $(document).ready(function () {
    * iPhone fixes
    */
 
-  var $window = $('window');
   var $backgroundCrosshairs = $('.section__background-elements');
 
-  if (isIOS) {
-    $backgroundCrosshairs.hide();
+  function hideBackgroundElements() {
+    if ($(window).width() <= 840) {
+      $backgroundCrosshairs.hide();
+    } else {
+      $backgroundCrosshairs.show();
+    }
   }
 
-  $backgroundCrosshairs.show();
+  $(window).on('load', hideBackgroundElements).on('resize', hideBackgroundElements);
 });
 
 /***/ }),

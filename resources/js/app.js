@@ -1138,18 +1138,21 @@ $(document).ready(function () {
      * iPhone fixes
      */
 
-    const $window = $('window');
     const $backgroundCrosshairs = $('.section__background-elements');
 
-    if (isIOS) {
-        $backgroundCrosshairs.hide();
-        $header.addClass('ios');
+    function hideBackgroundElements() {
+        if ($(window).width() <= 840) {
+            $backgroundCrosshairs.hide();
+        } else {
+            $backgroundCrosshairs.show();
+        }
     }
 
-    $backgroundCrosshairs.show();
-    if ($header.hasClass('ios')){
-        $header.removeClass('ios');
-    }
+    $(window)
+        .on('load', hideBackgroundElements)
+        .on('resize', hideBackgroundElements)
+
+
 
 });
 
