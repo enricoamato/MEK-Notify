@@ -855,6 +855,7 @@ $(document).ready(function () {
     const $headerList = $('.header__list');
 
     let prevScrollpos = window.pageYOffset;
+    let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
     window.onscroll = function () {
         if ($header.hasClass('navigation-open')) {
@@ -1139,13 +1140,16 @@ $(document).ready(function () {
 
     const $window = $('window');
     const $backgroundCrosshairs = $('.section__background-elements');
-    let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
     if (isIOS) {
         $backgroundCrosshairs.hide();
+        $header.addClass('ios');
     }
 
     $backgroundCrosshairs.show();
+    if ($header.hasClass('ios')){
+        $header.removeClass('ios');
+    }
 
 });
 

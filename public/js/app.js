@@ -34005,6 +34005,7 @@ $(document).ready(function () {
   var $header = $('#header');
   var $headerList = $('.header__list');
   var prevScrollpos = window.pageYOffset;
+  var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
   window.onscroll = function () {
     if ($header.hasClass('navigation-open')) {
@@ -34261,13 +34262,17 @@ $(document).ready(function () {
 
   var $window = $('window');
   var $backgroundCrosshairs = $('.section__background-elements');
-  var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
   if (isIOS) {
     $backgroundCrosshairs.hide();
+    $header.addClass('ios');
   }
 
   $backgroundCrosshairs.show();
+
+  if ($header.hasClass('ios')) {
+    $header.removeClass('ios');
+  }
 });
 
 /***/ }),
