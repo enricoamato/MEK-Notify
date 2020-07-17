@@ -15180,6 +15180,7 @@ body.cn .section__subtitle {
 
 .about-us__discord--logged-in {
   display: flex;
+  flex-wrap: wrap;
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16);
   opacity: 0;
   visibility: hidden;

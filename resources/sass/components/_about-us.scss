@@ -146,6 +146,7 @@
 
         &--logged-in {
             display: flex;
+            flex-wrap: wrap;
             box-shadow: 0 .3rem .6rem rgba($black, .16);
 
             opacity: 0;
