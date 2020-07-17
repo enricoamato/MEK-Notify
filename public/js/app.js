@@ -34263,7 +34263,7 @@ $(document).ready(function () {
   var $backgroundCrosshairs = $('.section__background-elements');
   var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-  if (isIOS && $window.width > 1000) {
+  if (isIOS) {
     $backgroundCrosshairs.hide();
   }
 

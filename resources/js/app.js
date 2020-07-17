@@ -1142,7 +1142,7 @@ $(document).ready(function () {
     let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 
-    if (isIOS && $window.width > 1000) {
+    if (isIOS) {
         $backgroundCrosshairs.hide();
     }
 
