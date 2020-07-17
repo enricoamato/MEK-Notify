@@ -1133,6 +1133,21 @@ $(document).ready(function () {
         .on('load', scrollHandler)
         .on('scroll', scrollHandler)
 
+    /**
+     * iPhone fixes
+     */
+
+    const $window = $('window');
+    const $backgroundCrosshairs = $('.section__background-elements');
+    let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+
+    if (isIOS && $window.width > 1000) {
+        $backgroundCrosshairs.hide();
+    }
+
+    $backgroundCrosshairs.show();
+
 });
 
 

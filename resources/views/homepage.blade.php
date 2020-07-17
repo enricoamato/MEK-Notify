@@ -2,11 +2,7 @@
     <div class="section-homepage container-fluid mb-auto mt-auto">
         <div class="row intro">
 
-            <div class="text-center text-xl-left offset-xl-1 col-xl-2 d-xl-flex align-items-xl-center"
-                 data-aos="zoom-in"
-                 data-aos-delay="0"
-                 data-aos-duration="800"
-                 data-aos-easing="ease-in-out">
+            <div class="text-center text-xl-left offset-xl-1 col-xl-2 d-xl-flex align-items-xl-center">
                 <h2 class="intro__text intro__text--1">@lang('homepage.intro-1')</h2>
             </div>
 
@@ -37,12 +33,7 @@
                 </div>
             </div>
 
-            <div
-                class="text-center text-xl-right offset-xl-1 col-xl-2 d-xl-flex justify-content-xl-end align-items-center"
-                data-aos="zoom-in"
-                data-aos-delay="0"
-                data-aos-duration="800"
-                data-aos-easing="ease-in-out">
+            <div class="text-center text-xl-right offset-xl-1 col-xl-2 d-xl-flex justify-content-xl-end align-items-center">
                 <h2 class="intro__text intro__text--2">@lang('homepage.intro-2')</h2>
             </div>
         </div>
